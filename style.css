@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+  background-color: hsl(0, 0%, 70%);
+  max-width: 50%;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 20px;
+  max-height: 100vh;
+}
+.heading,
+.input-field,
+.celcius,
+.fahrenheit,
+.btn,
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading h1 {
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.input-field input {
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 70%;
+}
+.convert {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.btn button {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: hsl(240, 100%, 50%);
+  color: white;
+}
+.btn button:hover {
+  background-color: hsl(240, 100%, 70%);
+  color: white;
+}
+.result p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 60%);
+  max-width: 300px;
+}
+
+
+
+/* small phones */
+@media (max-width: 600px) {
+  .main {
+    max-height: 90%;
+    max-width: 80%;
+  }
+  .heading h1 {
+    font-size: 20px;
+  }
+  .convert {
+    display: grid;
+    align-items: center;
+    margin: auto;
+    max-width: 70%;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .result p{
+    font-size: 15px;
+  }
+}
+
+/* Tablets */
+@media(min-width:600px){
+    .heading h1 {
+        font-size: 25px;
+      }
+}
